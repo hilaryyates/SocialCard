@@ -5,8 +5,15 @@ const Likes = () => {
 
   return (
     <div>
-      <button onClick={() => setCount(count + 1)}>Like</button>
-      {count > 0 ? <div>{count}</div> : null}
+      {count > 0 ? (
+        <div id='likes-wrapper'>
+          <span>Likes</span>
+          <span>{count}</span>
+        </div>
+      ) : null}
+      <button onClick={() => setCount((count = 1))}>
+        <img src='../images/heart.png' />
+      </button>
     </div>
   );
 };

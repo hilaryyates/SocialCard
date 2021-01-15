@@ -3,8 +3,8 @@ import React from "react";
 const Msg = (props) => {
   return (
     <div>
-      <div>{props.date}</div>
       <section>{props.msg}</section>
+      <div>{props.date}</div>
     </div>
   );
 };
